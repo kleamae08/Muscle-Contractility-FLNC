@@ -174,6 +174,33 @@ The premature termination codon may cause nonsense-mediated mRNA decay or allow 
 Follow-up experiments could quantify FLNC RNA, assess filamin C abundance and apparent size by Western blotting, and examine protein localization using immunofluorescence microscopy. A suitable muscle-cell model could also be used to test structural or contractile consequences. Appropriate controls and biological replicates would be essential. Overall, the analysis combines reference-sequence analysis with clinical variant annotation to formulate a mechanistic hypothesis. Experimental validation is still required to determine the variant's molecular consequences in a defined biological context.
 
 
+## 10. Answers to the Required Questions
+
+### 1. What does FLNC encode, and how does the protein contribute to muscle function?
+
+FLNC encodes filamin C, an actin-binding cytoskeletal protein that helps maintain muscle-cell structural integrity. It connects components of the actin cytoskeleton with other structural and signaling proteins, supporting muscle organization during contraction and relaxation.
+
+### 2. What was the exact protein accession and length retrieved with R?
+
+The retrieved RefSeq protein accession was NP_001449.3, associated with transcript NM_001458.5. The R script counted 2,725 amino acids in the retrieved reference protein sequence.
+
+### 3. What did the amino-acid composition chart show, and what can it not tell you?
+
+The three most abundant amino acids were glycine (302 residues), valine (273 residues), and proline (223 residues). The chart describes amino-acid frequency but cannot independently establish protein structure, molecular interactions, pathogenicity, or the functional effect of the variant.
+
+### 4. What is the assigned ClinVar variant, and what is its classification and evidence strength?
+
+The assigned variant is NM_001458.5:c.1948C>T (p.Arg650Ter), ClinVar Variation ID 421215. The record was reported as Pathogenic, with multiple submitters contributing to the aggregate classification. The current classification, review status, and supporting evidence should be verified directly on ClinVar before submission. A clinical classification is not equivalent to direct experimental confirmation of the molecular mechanism.
+
+### 5. What is the scientifically supported mechanism linking the variant to muscle function, and what remains uncertain?
+
+The variant introduces a premature termination codon at residue 650. This may cause nonsense-mediated mRNA decay or allow production of an abnormal truncated protein. Reduced filamin C abundance or function could compromise muscle-cell structural integrity. However, this project did not experimentally determine whether the transcript is degraded, whether a truncated protein is produced, or what cellular effects occur.
+
+### 6. What additional experiment would help test the proposed mechanism?
+
+RNA analysis could measure FLNC transcript abundance and investigate possible nonsense-mediated mRNA decay. Western blotting could assess filamin C abundance and apparent molecular size, while immunofluorescence microscopy could examine its cellular localization. Appropriate controls and biological replicates would be required.
+
+
 ## 9. References and Database Links
 
 1. National Center for Biotechnology Information (NCBI). **FLNC, Gene ID 2318.**  
