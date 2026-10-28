@@ -17,26 +17,63 @@
 | Nucleotide variant | NM_001458.5:c.1948C>T |
 | Protein consequence | NP_001449.3:p.Arg650Ter |
 | Reference protein length | 2,725 amino acids |
-| ClinVar record checked | October 27, 2026 |
+| ClinVar record checked | October 28, 2026 |
 
-## Research Question
+## 1. Project Overview
 
-How does filamin C contribute to muscle-cell structural integrity, and what possible molecular consequences are associated with the FLNC nonsense variant NM_001458.5:c.1948C>T (p.Arg650Ter)?
+This project investigates the human FLNC gene and the potential functional consequences of the variant NM_001458.5:c.1948C>T (p.Arg650Ter). The analysis uses public biological databases, an amino-acid sequence retrieved from NCBI, an amino-acid composition analysis, and a visualization of the variant’s position in the protein.
 
-## 1. Gene and Protein Function
+The main purpose is to connect the variant’s molecular consequence to the biological function of filamin C and to discuss how a premature stop codon may affect muscle structure and function.
 
-The **FLNC** gene encodes filamin C, an actin-binding cytoskeletal protein important for the organization and structural stability of muscle cells. Filamin C interacts with actin filaments and connects components of the muscle cytoskeleton with other structural and signaling proteins. These interactions help maintain muscle-cell integrity during repeated contraction and relaxation.
+Research Question
 
-This project analyzes the reference protein sequence and the position of the assigned variant. It does not directly measure protein abundance, protein localization, muscle force, or cellular function.
+How might the FLNC nonsense variant NM_001458.5:c.1948C>T (p.Arg650Ter), which introduces a premature termination codon at amino-acid position 650, affect filamin C and contribute to muscle-related disease?
+
+## 2. Gene and Protein Background
+
+The FLNC gene encodes filamin C, a cytoskeletal protein expressed predominantly in skeletal and cardiac muscle. Filamin C helps organize the actin cytoskeleton and supports the structural connections that allow muscle cells to withstand mechanical stress during contraction.
+
+Filamin C interacts with other proteins at important structural regions of muscle cells, including the Z-disc and myotendinous junction. These interactions contribute to the organization, stability, and maintenance of muscle fibers.
+
+Because filamin C contributes to muscle-cell structure, damaging variants in FLNC can be associated with different muscle and cardiac phenotypes. The particular outcome depends on factors such as the variant, its molecular effect, the affected protein region, and the biological context.
+
+### Reference Information
+
+| Field | Information |
+
+|---|---|
+
+| Gene symbol | FLNC |
+
+| Gene name | Filamin C |
+
+| NCBI Gene ID | 2318 |
+
+| Reference transcript | NM_001458.5 |
+
+| Reference protein | NP_001449.3 |
+
+| Protein length | 2,725 amino acids |
+
+| Nucleotide change | c.1948C>T |
+
+| Protein change | p.Arg650Ter |
+
+| ClinVar Variation ID | 421215 |
 
 ### Database Links
 
-- [NCBI Gene: FLNC (Gene ID 2318)](https://www.ncbi.nlm.nih.gov/gene/2318)
-- [NCBI RefSeq transcript: NM_001458.5](https://www.ncbi.nlm.nih.gov/nuccore/NM_001458.5)
-- [NCBI RefSeq protein: NP_001449.3](https://www.ncbi.nlm.nih.gov/protein/NP_001449.3)
-- [ClinVar: Variation ID 421215](https://www.ncbi.nlm.nih.gov/clinvar/variation/421215/)
+- [NCBI Gene: FLNC](https://www.ncbi.nlm.nih.gov/gene/2318)
 
-## 2. Methods and Reproducible Workflow
+- [NCBI Nucleotide: NM_001458.5](https://www.ncbi.nlm.nih.gov/nuccore/NM_001458.5)
+
+- [NCBI Protein: NP_001449.3](https://www.ncbi.nlm.nih.gov/protein/NP_001449.3)
+
+- [NCBI ClinVar: Variation ID 421215](https://www.ncbi.nlm.nih.gov/clinvar/variation/421215/)
+
+
+
+## 3. Methods and Reproducible Workflow
 
 The analysis was performed in RStudio/Posit Cloud using the `rentrez` and `ggplot2` packages.
 
@@ -69,7 +106,7 @@ To reproduce the analysis in a fresh R session:
 
 The workflow retrieves records from NCBI at runtime. Database records and clinical classifications may change, and network access or NCBI rate limits may affect retrieval. The assigned transcript and variant should not be substituted without instructor approval.
 
-## 3. NCBI Gene and Protein Results
+## 4. NCBI Gene and Protein Results
 
 | Item | Result |
 |---|---|
@@ -86,7 +123,7 @@ The protein accession was extracted from the GenBank record associated with the 
 
 These results identify the reference sequence used for the analysis. They do not establish the length or abundance of a protein produced from the variant allele.
 
-## 4. Amino-Acid Composition
+## 5. Amino-Acid Composition
 
 The R script counted the occurrences of the 20 standard amino acids in the retrieved 2,725-residue FLNC reference protein.
 
@@ -104,7 +141,7 @@ The three most abundant amino acids were:
 
 **Interpretation:** Glycine, valine, and proline were the three most frequent residues in the analyzed reference sequence. These counts describe the primary-sequence composition. They cannot independently establish the protein's three-dimensional structure, specific molecular interactions, pathogenicity, or the functional effect of p.Arg650Ter.
 
-## 5. Assigned ClinVar Variant
+## 6. Assigned ClinVar Variant
 
 The assigned variant is **NM_001458.5:c.1948C>T**, corresponding to **NP_001449.3:p.Arg650Ter**.
 
@@ -112,11 +149,9 @@ This is a **nonsense variant** because the nucleotide substitution changes the c
 
 ### Reported ClinVar Findings
 
-The ClinVar record checked on October 27, 2026, was reported to display an aggregate germline classification of **Pathogenic**, with four submissions contributing to that classification. The record was reported to show a last-evaluated date of September 8, 2025.
+The ClinVar record checked on October 28, 2026, was reported to display an aggregate germline classification of **Pathogenic**, with four submissions contributing to that classification. The record was reported to show a last-evaluated date of September 8, 2025.
 
 The associated condition records include muscle and cardiovascular phenotypes. The specific condition-level interpretations should be examined separately from the aggregate variant-level classification.
-
-These details must be checked against the live ClinVar record before submission because classifications, submission counts, review statuses, and dates can change.
 
 ### Variant Links
 
@@ -126,7 +161,7 @@ These details must be checked against the live ClinVar record before submission 
 
 **Evidence limitation:** ClinVar is a clinical variant-interpretation database. Its classification summarizes submitted evidence; it is not, by itself, direct experimental proof of the molecular effect in a particular cell type. The number of submissions contributing to a classification is not the same as the review-status star level.
 
-## 6. Protein-Position Figure
+## 7. Protein-Position Figure
 
 ### Figure 2. Position of p.Arg650Ter in the FLNC Reference Protein
 
@@ -136,7 +171,7 @@ The figure represents the 2,725-amino-acid reference protein as a linear sequenc
 
 The marker identifies the position associated with the protein consequence in the reference sequence. It does not show the experimentally determined length of an altered protein or prove that a shortened protein is produced.
 
-## 7. Molecular Mechanism, Interpretation, and Limitations
+## 8. Molecular Mechanism, Interpretation, and Limitations
 
 The assigned variant introduces a premature termination codon at amino-acid position 650. This type of variant can affect protein production through more than one possible mechanism.
 
@@ -161,20 +196,20 @@ A follow-up study could compare variant-bearing cells with appropriately matched
 
 Appropriate controls, biological replicates, and a validated model system would be required. These experiments could help distinguish a predicted mechanism from an experimentally observed molecular consequence.
 
-## 8. Discussion
+## 9. Discussion
 
 The FLNC gene encodes filamin C, an actin-binding cytoskeletal protein that contributes to muscle-cell organization and structural integrity. The assigned variant is NM_001458.5:c.1948C>T, corresponding to p.Arg650Ter in RefSeq protein NP_001449.3. This is a nonsense variant because the nucleotide substitution introduces a premature termination codon at amino-acid position 650. The R workflow retrieved the transcript-linked reference protein and counted 2,725 amino-acid residues.
 
 The amino-acid composition analysis identified glycine as the most frequent residue (302), followed by valine (273) and proline (223). These results describe the primary sequence. They do not independently establish protein structure, molecular interactions, pathogenicity, or the functional effect of the assigned variant.
 
-The ClinVar record checked on October 27, 2026, was reported to display an aggregate germline classification of Pathogenic, with four submissions contributing to the classification. This represents a clinical database interpretation and should be distinguished from direct experimental evidence of the molecular mechanism. The current classification, review status, condition records, and supporting submissions should be verified before submission.
+The ClinVar record checked on October 28, 2026, was reported to display an aggregate germline classification of Pathogenic, with four submissions contributing to the classification. This represents a clinical database interpretation and should be distinguished from direct experimental evidence of the molecular mechanism. The current classification, review status, condition records, and supporting submissions should be verified before submission.
 
 The premature termination codon may cause nonsense-mediated mRNA decay or allow the production of an abnormal truncated protein. If normal filamin C abundance or function is reduced, muscle-cell structural integrity could be affected. However, neither the amino-acid composition chart nor the linear position plot establishes which molecular outcome occurs. This project did not directly measure RNA abundance, protein abundance, protein localization, or muscle function.
 
 Follow-up experiments could quantify FLNC RNA, assess filamin C abundance and apparent size by Western blotting, and examine protein localization using immunofluorescence microscopy. A suitable muscle-cell model could also be used to test structural or contractile consequences. Appropriate controls and biological replicates would be essential. Overall, the analysis combines reference-sequence analysis with clinical variant annotation to formulate a mechanistic hypothesis. Experimental validation is still required to determine the variant's molecular consequences in a defined biological context.
 
 
-## 9. Answers to the Required Questions
+## 10. Answers to the Required Questions
 
 ### 1. What does FLNC encode, and how does the protein contribute to muscle function?
 
@@ -199,9 +234,16 @@ The variant introduces a premature termination codon at residue 650. This may ca
 ### 6. What additional experiment would help test the proposed mechanism?
 
 RNA analysis could measure FLNC transcript abundance and investigate possible nonsense-mediated mRNA decay. Western blotting could assess filamin C abundance and apparent molecular size, while immunofluorescence microscopy could examine its cellular localization. Appropriate controls and biological replicates would be required.
+## 11. Limitations
 
+1. **Sequence\-based analysis:** The analysis examines sequence information and amino\-acid frequencies, not protein function in living cells\.
+2. **Protein expression:** The project does not establish whether a shortened filamin C protein is produced\.
+3. **Nonsense\-mediated decay:** NMD is a possible mechanism, but transcript degradation was not directly measured\.
+4. **Clinical interpretation:** ClinVar provides a clinical classification based on submitted evidence; this project does not independently validate that classification\.
+5. **Experimental validation:** No functional assay was performed to directly measure the variant’s effect on muscle\-cell structure or function\.
+6. **Reproducibility:** Results depend on the exact input sequence, R code, package versions, and output files\. These should be checked when reproducing the analysis\.
 
-## 10. References and Database Links
+## 12. References and Database Links
 
 1. National Center for Biotechnology Information (NCBI). **FLNC, Gene ID 2318.**  
    https://www.ncbi.nlm.nih.gov/gene/2318
@@ -224,4 +266,5 @@ RNA analysis could measure FLNC transcript abundance and investigate possible no
 7. ggplot2 documentation. **Data visualization in R.**  
    https://ggplot2.tidyverse.org/
 
-**Database access date recorded for this README:** October 27, 2026. Recheck the live records and update the access date if the project is submitted later.
+   Database access date for this revision: October 28, 2026.
+
