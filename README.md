@@ -40,25 +40,15 @@ Because filamin C contributes to muscle-cell structure, damaging variants in FLN
 ### Reference Information
 
 | Field | Information |
-
 |---|---|
-
 | Gene symbol | FLNC |
-
 | Gene name | Filamin C |
-
 | NCBI Gene ID | 2318 |
-
 | Reference transcript | NM_001458.5 |
-
 | Reference protein | NP_001449.3 |
-
 | Protein length | 2,725 amino acids |
-
 | Nucleotide change | c.1948C>T |
-
 | Protein change | p.Arg650Ter |
-
 | ClinVar Variation ID | 421215 |
 
 ### Database Links
