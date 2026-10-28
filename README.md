@@ -173,36 +173,8 @@ The premature termination codon may cause nonsense-mediated mRNA decay or allow 
 
 Follow-up experiments could quantify FLNC RNA, assess filamin C abundance and apparent size by Western blotting, and examine protein localization using immunofluorescence microscopy. A suitable muscle-cell model could also be used to test structural or contractile consequences. Appropriate controls and biological replicates would be essential. Overall, the analysis combines reference-sequence analysis with clinical variant annotation to formulate a mechanistic hypothesis. Experimental validation is still required to determine the variant's molecular consequences in a defined biological context.
 
-## 9. Repository Structure and Submission Checklist
 
-The public GitHub repository should contain the following files:
-
-```text
-Muscle-Contractility-FLNC/
-├── README.md
-├── analysis.R
-├── data/
-│   └── FLNC_protein.fasta
-├── results/
-│   ├── gene_summary.txt
-│   ├── protein_accession.txt
-│   └── amino_acid_composition.csv
-└── figures/
-    ├── 01_amino_acid_composition.png
-    └── 02_variant_position.png
-```
-
-### Before Submission
-
-- [ ] Confirm that every required file is uploaded.
-- [ ] Run `analysis.R` and check for errors.
-- [ ] Confirm that the protein accession is `NP_001449.3` and that the FASTA sequence contains 2,725 residues.
-- [ ] Confirm that the amino-acid counts in the CSV match the README.
-- [ ] Confirm that both figures are in the `figures/` directory and render correctly on GitHub.
-- [ ] Recheck the ClinVar classification, review status, associated conditions, and dates.
-- [ ] Include the actual public GitHub repository URL in the submission.
-
-## 10. References and Database Links
+## 9. References and Database Links
 
 1. National Center for Biotechnology Information (NCBI). **FLNC, Gene ID 2318.**  
    https://www.ncbi.nlm.nih.gov/gene/2318
