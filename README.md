@@ -174,7 +174,7 @@ The premature termination codon may cause nonsense-mediated mRNA decay or allow 
 Follow-up experiments could quantify FLNC RNA, assess filamin C abundance and apparent size by Western blotting, and examine protein localization using immunofluorescence microscopy. A suitable muscle-cell model could also be used to test structural or contractile consequences. Appropriate controls and biological replicates would be essential. Overall, the analysis combines reference-sequence analysis with clinical variant annotation to formulate a mechanistic hypothesis. Experimental validation is still required to determine the variant's molecular consequences in a defined biological context.
 
 
-## 10. Answers to the Required Questions
+## 9. Answers to the Required Questions
 
 ### 1. What does FLNC encode, and how does the protein contribute to muscle function?
 
@@ -201,7 +201,7 @@ The variant introduces a premature termination codon at residue 650. This may ca
 RNA analysis could measure FLNC transcript abundance and investigate possible nonsense-mediated mRNA decay. Western blotting could assess filamin C abundance and apparent molecular size, while immunofluorescence microscopy could examine its cellular localization. Appropriate controls and biological replicates would be required.
 
 
-## 9. References and Database Links
+## 10. References and Database Links
 
 1. National Center for Biotechnology Information (NCBI). **FLNC, Gene ID 2318.**  
    https://www.ncbi.nlm.nih.gov/gene/2318
