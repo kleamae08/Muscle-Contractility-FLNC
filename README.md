@@ -7,7 +7,7 @@
 |---|---|
 | Course | BIO 300 – Cell and Molecular Biology |
 | Student | Klea Mae G. Estrellanes |
-| Assignment number | 43 |
+| Student number | 202400728 |
 | Gene symbol | FLNC |
 | Gene name | Filamin C |
 | Organism | *Homo sapiens* (human) |
