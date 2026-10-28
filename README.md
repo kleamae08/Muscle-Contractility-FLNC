@@ -100,7 +100,7 @@ The three most abundant amino acids were:
 
 ### Figure 1. Amino-Acid Composition of the FLNC Reference Protein
 
-![Amino-acid composition of the FLNC reference protein](figures/01_amino_acid_composition.png)
+![Amino-acid composition of the FLNC reference protein](01_amino_acid_composition.png).
 
 **Interpretation:** Glycine, valine, and proline were the three most frequent residues in the analyzed reference sequence. These counts describe the primary-sequence composition. They cannot independently establish the protein's three-dimensional structure, specific molecular interactions, pathogenicity, or the functional effect of p.Arg650Ter.
 
