@@ -65,36 +65,85 @@ Because filamin C contributes to muscle-cell structure, damaging variants in FLN
 
 ## 3. Methods and Reproducible Workflow
 
-The analysis was performed in RStudio/Posit Cloud using the `rentrez` and `ggplot2` packages.
+The analysis was performed in RStudio/Posit Cloud using the `rentrez` and `ggplot2` packages. The workflow retrieved FLNC reference information from NCBI, analyzed the protein sequence, generated visualizations, and examined the assigned ClinVar variant.
 
-### Procedures
+### 3.1 Software and Packages
 
-1. Created an R project named `Muscle_Contractility_FLNC` containing `analysis.R` and the `data/`, `results/`, and `figures/` directories.
-2. Installed the required packages using `install.packages(c("rentrez", "ggplot2"))` and loaded them using `library(rentrez)` and `library(ggplot2)`.
-3. Set the assigned gene symbol (`FLNC`), transcript accession (`NM_001458.5`), ClinVar Variation ID (`421215`), and protein consequence (`p.Arg650Ter`) in the R script.
-4. Queried NCBI Gene for the human FLNC record and saved the gene summary as `results/gene_summary.txt`.
-5. Retrieved the GenBank record for transcript `NM_001458.5`, extracted its linked RefSeq protein accession, retrieved the protein FASTA sequence, and saved it as `data/FLNC_protein.fasta`.
-6. Counted the 20 standard amino acids in the retrieved sequence and saved the frequency table as `results/amino_acid_composition.csv`.
-7. Generated an amino-acid composition bar chart saved as `figures/01_amino_acid_composition.png`.
-8. Generated a linear protein-position plot marking residue 650, saved as `figures/02_variant_position.png`.
-9. Examined the assigned ClinVar record and recorded the reported classification, review status, associated conditions, and evaluation dates.
+The analysis used R or RStudio/Posit Cloud and the following R packages:
 
-### Reproducing the Analysis
+- `rentrez` — to retrieve records from NCBI databases.
+- `ggplot2` — to create data visualizations.
 
-To reproduce the analysis in a fresh R session:
+Install the packages using:
+
+```r
+install.packages(c("rentrez", "ggplot2"))
+```
+
+Load the packages using:
+
+```r
+library(rentrez)
+library(ggplot2)
+```
+
+### 3.2 Analysis Procedures
+
+1. **Set the assigned identifiers.** The analysis used the gene symbol `FLNC`, NCBI Gene ID `2318`, transcript accession `NM_001458.5`, ClinVar Variation ID `421215`, and protein consequence `p.Arg650Ter`.
+
+2. **Retrieve gene information.** The NCBI Gene record for human FLNC was retrieved, and the gene summary was saved as `gene_summary.txt`.
+
+3. **Retrieve the reference protein.** The transcript record for `NM_001458.5` was examined to identify its linked RefSeq protein accession. The protein sequence was retrieved in FASTA format and saved as `FLNC_protein.fasta`.
+
+4. **Record accession information.** The protein accession and related information were saved in `protein_accession.txt`.
+
+5. **Calculate amino-acid composition.** The reference protein sequence was analyzed to count the occurrences of the 20 standard amino acids. The frequency results were saved as `amino_acid_composition.csv`.
+
+6. **Generate the composition chart.** A bar chart showing amino-acid frequencies was generated and saved as `01_amino_acid_composition.png`.
+
+7. **Visualize the variant position.** The assigned variant at amino-acid position 650 was marked on a linear representation of the reference FLNC protein. The figure was saved as `02_variant_position.jpg`.
+
+8. **Review the clinical variant record.** ClinVar Variation ID `421215` was examined for its reported classification, review status, associated conditions, and relevant database dates.
+
+### 3.3 Reproducing the Analysis
+
+To reproduce the analysis:
 
 1. Install R and RStudio, or use a compatible Posit Cloud environment.
-2. Install the required packages:
+2. Download or clone the repository.
+3. Open the repository directory in RStudio.
+4. Install the required packages using the commands in Section 3.1.
+5. Ensure that `analysis.R` and its input files are in the locations expected by the script.
+6. Run `analysis.R` from beginning to end.
+7. Confirm that the expected output files are generated.
 
-   ```r
-   install.packages(c("rentrez", "ggplot2"))
-   ```
+Run the script from a terminal in the repository directory using:
 
-3. Open the project directory in RStudio.
-4. Run `analysis.R` from the beginning.
-5. Confirm that the expected files are generated and that the results match the values reported in this README.
+```bash
+Rscript analysis.R
+```
 
-The workflow retrieves records from NCBI at runtime. Database records and clinical classifications may change, and network access or NCBI rate limits may affect retrieval. The assigned transcript and variant should not be substituted without instructor approval.
+Alternatively, open `analysis.R` in RStudio and run the script.
+
+### 3.4 Expected Files
+
+The analysis files are stored in the repository's root directory.
+
+| File | Purpose |
+|---|---|
+| `analysis.R` | R analysis script |
+| `FLNC_protein.fasta` | Retrieved reference protein sequence |
+| `gene_summary.txt` | NCBI gene information |
+| `protein_accession.txt` | Protein accession information |
+| `amino_acid_composition.csv` | Amino-acid frequency results |
+| `01_amino_acid_composition.png` | Amino-acid composition chart |
+| `02_variant_position.jpg` | Variant-position visualization |
+
+### 3.5 Reproducibility Considerations
+
+The workflow retrieves records from NCBI at runtime. Retrieved records may change as databases are updated, and network availability or NCBI rate limits may affect retrieval.
+
+The reference transcript and assigned variant must remain `NM_001458.5:c.1948C>T` (p.Arg650Ter) unless the instructor approves a change. The reported results correspond to the reference sequence and analysis outputs used in this project.
 
 ## 4. NCBI Gene and Protein Results
 
