@@ -105,12 +105,13 @@ The workflow retrieves records from NCBI at runtime. Database records and clinic
 | Transcript accession | NM_001458.5 |
 | Protein accession retrieved by R | NP_001449.3 |
 | Protein length counted from FASTA | 2,725 amino acids |
-| FASTA file | `FLNC_protein.fasta` |
-| Gene summary | `gene_summary.txt` |
-| Protein accession record | `protein_accession.txt` |
-| Amino-acid composition CSV | `amino_acid_composition.csv` |
-| Amino-acid composition figure | `01_amino_acid_composition.png` |
-| Variant position figure | `02_variant_position.jpg` |
+| FASTA file | [FLNC_protein.fasta](./FLNC_protein.fasta) |
+| Gene summary | [gene_summary.txt](./gene_summary.txt) |
+| Protein accession record | [protein_accession.txt](./protein_accession.txt) |
+| Amino-acid composition CSV | [amino_acid_composition.csv](./amino_acid_composition.csv) |
+| Amino-acid composition figure | [01_amino_acid_composition.png](./01_amino_acid_composition.png) |
+| Variant position figure | [02_variant_position.jpg](./02_variant_position.jpg) |
+| R analysis script | [analysis.R](./analysis.R) |
 
 The protein accession was extracted from the GenBank record associated with the assigned transcript. The protein length was calculated by counting the amino-acid residues in the retrieved FASTA sequence.
 
