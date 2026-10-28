@@ -167,29 +167,46 @@ The marker identifies the position associated with the protein consequence in th
 
 ## 8. Molecular Mechanism, Interpretation, and Limitations
 
-The assigned variant introduces a premature termination codon at amino-acid position 650. This type of variant can affect protein production through more than one possible mechanism.
+### 8.1 Normal Protein Function
 
-One possibility is **nonsense-mediated mRNA decay (NMD)**, a cellular RNA-surveillance pathway that recognizes and degrades certain transcripts containing premature termination codons. Alternatively, some transcripts may escape degradation and produce an abnormal truncated polypeptide.
+The *FLNC* gene encodes filamin C, an actin-binding cytoskeletal protein found mainly in skeletal and cardiac muscle. Filamin C cross-links actin filaments and interacts with structural proteins at the Z-disc and myotendinous junction. These functions help maintain muscle-fiber organization, sarcomere stability, and resistance to mechanical stress during contraction.
 
-Whether NMD occurs depends partly on the transcript structure and the position of the premature termination codon relative to exon–exon junctions. The protein-position plot alone cannot distinguish between these outcomes.
+Filamin C primarily supports muscle structure. It does not directly drive the actin–myosin cycle or regulate calcium release. Instead, it helps maintain the structural organization needed for normal muscle function.
 
-### Proposed Mechanistic Pathway
+### 8.2 Evidence for the Assigned Variant
 
-**FLNC c.1948C>T → premature termination codon → possible transcript degradation and/or abnormal protein production → potential loss of filamin C function → possible impairment of muscle-cell structural integrity.**
+The assigned variant is NM_001458.5:c.1948C>T, corresponding to NP_001449.3:p.Arg650Ter. The nucleotide substitution introduces a premature termination codon at amino-acid position 650.
 
-The reported pathogenic classification in ClinVar supports the clinical relevance of the variant. However, this project did not measure FLNC RNA abundance, filamin C protein abundance, protein size, cellular localization, or muscle function. Therefore, NMD, protein truncation, and a specific cellular defect have not been experimentally demonstrated by this computational analysis.
+**Clinical database evidence:** ClinVar Variation ID 421215 reports an aggregate germline classification of Pathogenic. The record's classification reflects submitted clinical evidence and should be distinguished from experiments performed in this project.
 
-### Proposed Validation Experiments
+**Predicted molecular consequence:** The premature termination codon may trigger nonsense-mediated mRNA decay (NMD), reducing the amount of FLNC transcript available for translation. If the transcript escapes NMD, it may produce a shortened filamin C protein lacking downstream regions.
 
-A follow-up study could compare variant-bearing cells with appropriately matched control cells.
+**Experimental evidence from this project:** The analysis identifies the reference protein, counts its amino acids, and marks the assigned variant's position. It does not directly measure FLNC RNA abundance, protein abundance, protein size, or muscle-cell function. Therefore, this project does not experimentally establish whether NMD occurs or whether a shortened protein is produced.
 
-- **RNA analysis:** Measure FLNC transcript abundance and, where appropriate, compare transcript levels with and without inhibition of NMD.
-- **Western blotting:** Assess filamin C abundance and apparent molecular size using validated antibodies.
-- **Immunofluorescence microscopy:** Examine filamin C localization and muscle-cell structural organization.
-- **Functional assessment:** If a suitable muscle-cell model is available, measure a relevant structural or contractile phenotype.
+Source: [NCBI ClinVar, Variation ID 421215](https://www.ncbi.nlm.nih.gov/clinvar/variation/421215/).
 
-Appropriate controls, biological replicates, and a validated model system would be required. These experiments could help distinguish a predicted mechanism from an experimentally observed molecular consequence.
+### 8.3 Causal Chain
 
+**Gene:** *FLNC*  
+→ **Protein:** Filamin C  
+→ **Normal molecular function:** Cross-links actin and supports muscle structural organization  
+→ **Assigned variant:** c.1948C>T (p.Arg650Ter)  
+→ **Possible molecular effect:** Nonsense-mediated mRNA decay or production of a shortened protein  
+→ **Possible functional consequence:** Reduced filamin C abundance or function  
+→ **Possible outcome:** Impaired muscle-fiber structural integrity and possible muscle or cardiac dysfunction.
+
+This causal chain represents a biologically plausible interpretation. The exact molecular and clinical effects cannot be established from sequence analysis alone.
+
+### 8.4 Proposed Validation Experiment
+
+A suitable experiment would compare FLNC transcript and protein expression in an appropriate cellular model carrying the variant with a matched reference control.
+
+1. **RT-qPCR:** Measure FLNC transcript abundance in reference and variant samples.
+2. **Western blotting:** Compare filamin C abundance and apparent molecular size using an appropriate validated antibody.
+3. **NMD investigation:** If appropriate, compare variant-transcript abundance before and after inhibition of nonsense-mediated mRNA decay.
+4. **Microscopy:** Use immunofluorescence to examine filamin C localization and muscle-cell structural organization if a suitable model is available.
+
+Appropriate controls and biological replicates are necessary. Reduced transcript abundance would support, but not alone prove, transcript degradation. Detection of a smaller protein band would support production of a shortened protein. These experiments would help distinguish the proposed mechanisms from experimentally observed effects.
 ## 9. Discussion
 
 The FLNC gene encodes filamin C, an actin-binding cytoskeletal protein that contributes to muscle-cell organization and structural integrity. The assigned variant is NM_001458.5:c.1948C>T, corresponding to p.Arg650Ter in RefSeq protein NP_001449.3. This is a nonsense variant because the nucleotide substitution introduces a premature termination codon at amino-acid position 650. The R workflow retrieved the transcript-linked reference protein and counted 2,725 amino-acid residues.
