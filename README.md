@@ -76,7 +76,7 @@ The workflow retrieves records from NCBI at runtime. Database records and clinic
 | Gene symbol | FLNC |
 | NCBI Gene ID | 2318 |
 | Transcript accession | NM_001458.5 |
-| Protein accession retrieved by R | NP_001449.3 |
+| Protein accession retrieved by R | NP_001449.3 | 
 | Protein length counted from FASTA | 2,725 amino acids |
 | FASTA file | `data/FLNC_protein.fasta` |
 | Gene summary | `results/gene_summary.txt` |
