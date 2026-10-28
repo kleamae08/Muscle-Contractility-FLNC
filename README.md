@@ -130,7 +130,7 @@ These details must be checked against the live ClinVar record before submission 
 
 ### Figure 2. Position of p.Arg650Ter in the FLNC Reference Protein
 
-![Position of p.Arg650Ter in the FLNC reference protein](02_variant_position.png)
+![Position of p.Arg650Ter in the FLNC reference protein](02_variant_position.jpg)
 
 The figure represents the 2,725-amino-acid reference protein as a linear sequence and marks the assigned variant at position 650.
 
