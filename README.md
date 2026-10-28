@@ -236,15 +236,15 @@ Source: [NCBI ClinVar, Variation ID 421215](https://www.ncbi.nlm.nih.gov/clinvar
 
 ### 8.3 Causal Chain
 
-**Gene:** *FLNC*  
+**Gene:** FLNC  
 → **Protein:** Filamin C  
-→ **Normal molecular function:** Cross-links actin and supports muscle structural organization  
-→ **Assigned variant:** c.1948C>T (p.Arg650Ter)  
-→ **Possible molecular effect:** Nonsense-mediated mRNA decay or production of a shortened protein  
-→ **Possible functional consequence:** Reduced filamin C abundance or function  
-→ **Possible outcome:** Impaired muscle-fiber structural integrity and possible muscle or cardiac dysfunction.
+→ **Normal molecular function:** Filamin C cross-links actin filaments and helps maintain the structural organization of muscle cells.  
+→ **Assigned variant:** NM_001458.5:c.1948C>T (p.Arg650Ter), a nonsense variant that introduces a premature stop codon at amino acid 650.  
+→ **Predicted molecular effect:** The premature stop codon may cause nonsense-mediated mRNA decay or production of a truncated filamin C protein.  
+→ **Possible functional consequence:** Reduced availability or disruption of functional filamin C may interfere with normal muscle-cell structural organization.  
+→ **Possible biological outcome:** Impaired muscle structure and function; the specific clinical effect depends on the biological context.
 
-This causal chain represents a biologically plausible interpretation. The exact molecular and clinical effects cannot be established from sequence analysis alone.
+This causal chain is supported by the variant's predicted protein consequence and its pathogenic classification in ClinVar. However, the present sequence and protein analysis does not directly demonstrate mRNA decay, production of a truncated protein, loss of filamin C function, or a clinical phenotype. These effects require experimental or additional clinical evidence.
 
 ### 8.4 Proposed Validation Experiment
 
