@@ -1,0 +1,4 @@
+Gene symbol: FLNC
+NCBI Gene ID: 2318
+Official name: filamin C
+Chromosome: 7
